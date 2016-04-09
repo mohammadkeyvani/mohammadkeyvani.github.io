@@ -1,0 +1,121 @@
+---
+layout: default
+
+---
+
+<!-- Start Hero -->
+<div class="hero" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover;">
+    <div class="container-fluid">
+        <div class="col-sm-12" >
+		<br>
+          <h3 class="blue">نکاتی در مورد جکیل و گیت هاب</h3>
+        </div>
+		<div class="col-xs-12 pull-right">
+					<div class="media" style="padding-top:10px">
+				<div class="media-left" style="padding:0">
+					<div class="boxed-icon">
+						<svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
+					</div>
+				</div>
+				<div class="media-body" style="padding-right:5px">
+					<p>jekyll از زبان نشانه گذاری yaml برای پست ها استفاده می کنه. استفاده از این زبان خیلی خیلی ساده هست و شما فقط کافیه از مثال ها برای یادگیری اون استفاده کنید.</p>
+
+				</div>
+			</div>
+			<div class="media" style="padding-top:10px">
+				<div class="media-left" style="padding:0">
+					<div class="boxed-icon">
+						<svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
+					</div>
+				</div>
+				<div class="media-body" style="padding-right:5px">
+					<p>ساختار پوشه ها کاملا مشخصه ولی نکته ای که این وسط مهمه اینه که وبسایت کامل شده و ترجمه شده نهاییتون در پوشه _site ذخیره میشه.</p>
+				</div>
+			</div>
+						<div class="media" style="padding-top:10px">
+				<div class="media-left" style="padding:0">
+					<div class="boxed-icon">
+						<svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
+					</div>
+				</div>
+				<div  class="media-body" style="padding-right:5px">
+					<p>زمانی که از کد jekyll serve -w استفاده می کنید. برنامه در حالت اجرا میمونه و به تغییراتتون توجه می کنه تا اون رو سریع ترجمه کنه و خروجی رو روی پورت 4000 بهتون نشون بده. تنها تغییراتی که به صورت آنی اعمال نمیشه، تغییراتی هست که روی فایل _config.yml انجام می دین. برای اعمال این تغییرات کافیه jekyll رو متوقف کنید و بعد دوباره اون رو اجرا کنید.</p>
+				</div>
+			</div>
+									<div class="media" style="padding-top:10px">
+				<div class="media-left" style="padding:0">
+					<div class="boxed-icon">
+						<svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
+					</div>
+				</div>
+				<div  class="media-body" style="padding-right:5px">
+					<a class="a-link" href="/about_jekyll"><p>نکاتی در مورد جکیل و github</p></a>
+				</div>
+			</div>
+			<br>
+		</div>
+
+    </div>
+</div>
+<!-- End Hero -->
+
+<!-- Start 3 columns -->
+<div class="three-shade-col">
+    <div class="col-sm-6">
+        <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
+        <h3>تماس با ما</h3>
+        <ul>
+            {% if site.phone %}<li><strong>تلفن تماس: </strong> {{ site.phone }}</li>{% endif %}
+            {% if site.email %}<li><strong>ایمیل: </strong> {{ site.email }}</li>{% endif %}
+        </ul>
+    </div>
+    <div class="col-sm-6">
+        <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
+        <h3>موقعیت</h3>
+            <p>
+                {{ site.address }}
+            </p>
+    </div>
+</div>
+<!-- End 3 columns -->
+
+<!-- Start About -->
+<div id="about" class="about">
+    <div class="container-fluid">
+        <h2 class="section-title">درباره من</h2>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>به سایت ما خوش آمدید</h3>
+                <div class="media">
+                    <div class="media-left" style="padding:0">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-heart"><use xlink:href="#icon-heart"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body" style="padding-right:5px">
+                        <p>من محمد کیوانی هستم دانشجوی رشته ی نرم افزار و در زمینه ی طراحی سایت فعالیت دارم</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left" style="padding:0">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body" style="padding-right:5px">
+                        <p>هدف از تاسیس این سایت تنها برای آموزش و فعالیت های تحقیقاتی است.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img class="img-respansive" src="img/prog.jpg" alt="...">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End About -->
+
+
+
+

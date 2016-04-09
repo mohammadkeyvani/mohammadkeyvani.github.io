@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'BHoma';
+  src: url('../fonts/BHoma.eot?#') format('eot'),  /* IE6–8 */
+       url('../fonts/BHoma.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('../fonts/BHoma.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+
+@font-face {
+  font-family: 'Koodak';
+  src: url('../fonts/BKoodakBold.eot?#'),  /* IE6–8 */
+       url('../fonts/BKoodakBold.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+  font-family: 'RoyaBold';
+  src: url('../fonts/BRoya.eot?#'),  /* IE6–8 */
+       url('../fonts/BRoya.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+  font-family: 'Yekan';
+  src: url('../fonts/BYekan.eot?#'),  /* IE6–8 */
+       url('../fonts/BYekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+  font-family: 'BYekan';
+  src: url('../fonts/BYekan.eot?#'),  /* IE6–8 */
+       url('../fonts/BYekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+  font-family: 'Mehr';
+  src: url('../fonts/BMehrBold.eot#'),  /* IE6–8 */
+       url('../fonts/BMehrBold.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+  font-family: 'Zar';
+  src: url('../fonts/BZar.eot?#'),  /* IE6–8 */
+       url('../fonts/BZar.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+  font-family: 'Mitra';
+  src: url('../fonts/BMitra.eot?#'),  /* IE6–8 */
+       url('../fonts/BMitra.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+  font-family: 'Roya';
+  src: url('../fonts/BRoya.eot?#'),  /* IE6–8 */
+       url('../fonts/BRoya.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+  font-family: 'Naskh';
+  src: url('../fonts/DroidNaskh-Regular.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+  font-family: 'Pezeshk';
+  src: url('../fonts/YekPezeshkSerif-Regular.woff') format('woff');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+  font-family: 'PezeshkLatin';
+  src: url('../fonts/YekPezeshkSerifLatin-Regular.woff') format('woff');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+  font-family: 'IRAN';
+  src: url('../fonts/iran-sans.ttf') format('truetype');  /* FF3.6+, IE9, IE10, Chrome6+, Saf5.1+*/
+}

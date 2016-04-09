@@ -1,0 +1,108 @@
+---
+layout: default
+
+---
+
+<!-- Start Hero -->
+<div class="hero" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover;">
+    <div class="container-fluid">
+        <div class="col-sm-12" >
+		<br>
+          <h3 class="blue">آموزش جکیل قسمت1</h3>
+        </div>
+		<div class="col-xs-12 pull-right">
+		<br>
+			<div class="col-xs-12" >
+				<img class="img-respansive" src="img/m5.png" style="margin:auto;width:100%">
+			</div>
+			<span><br></span>
+			<p>در ابتدا باید جکیل را بروی سیستم خود نصب کنید.برای این کار باید ابتدا ruby رانصب کنید.</p>
+			<div class="col-xs-12" >
+				<img class="img-respansive" src="img/m6.png" style="margin:auto">
+			</div>
+			<span><br><span>
+			<p>باید حواستان باشد که حتما تیک دومی را بزنید.</p>
+			<p>بعد از نصب Ruby نوبت به نصب Ruby DevKit میرسه که از همون آدرس قبلی قابل دسترسی هست. برای نصب ابتدا محتویات فایل</p>
+			<p>zip رو درون یک پوشه (ترجیحا در root یکی از درایورها) که اسمش بدون فاصله و حروف خاص باشه قرار می دیم. بطور مثال </p>
+			<p>C:\RubyDevKit مکان مناسبی برای نصب Ruby DevKit است. پس از قرار دادن فایلها نوبت به اجرای اونها میرسه. کدهای زیر رو </p>
+			<p>برای نصب DevKit توی command prompt ویندوز وارد می کنیم. دقت کنید که باید توی مسیر همین پوشه ایجاد شده باشیم تا</p>
+			<p>بتونیم محتویاتش رو نصب کنیم.</p>
+			<div class="col-xs-12" >
+				<img class="img-respansive" src="img/m7.png" style="margin:auto">
+			</div>
+			<span><br><span>
+			<p>بعد از اینکه نصب ruby و ruby DevKit تموم شد نوبت به نصب jekyll میرسه. برای نصب jekyll کدهای زیر رو توی command prompt ویندوز وارد کنید.</p>
+			<div class="col-xs-12" >
+				<img class="img-respansive" src="img/m8.png" style="margin:auto">
+			</div>
+			<span><br><span>
+			<a class="a-link" href="/jekyll_2"><h6 class="blue">صفحه ی بعد</h6></a>
+			<br>
+		</div>
+		<span><br></span>
+
+
+    </div>
+</div>
+<!-- End Hero -->
+
+<!-- Start 3 columns -->
+<div class="three-shade-col">
+    <div class="col-sm-6">
+        <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
+        <h3>تماس با ما</h3>
+        <ul>
+            {% if site.phone %}<li><strong>تلفن تماس: </strong> {{ site.phone }}</li>{% endif %}
+            {% if site.email %}<li><strong>ایمیل: </strong> {{ site.email }}</li>{% endif %}
+        </ul>
+    </div>
+    <div class="col-sm-6">
+        <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
+        <h3>موقعیت</h3>
+            <p>
+                {{ site.address }}
+            </p>
+    </div>
+</div>
+<!-- End 3 columns -->
+
+<!-- Start About -->
+<div id="about" class="about">
+    <div class="container-fluid">
+        <h2 class="section-title">درباره من</h2>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>به سایت ما خوش آمدید</h3>
+                <div class="media">
+                    <div class="media-left" style="padding:0">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-heart"><use xlink:href="#icon-heart"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body" style="padding-right:5px">
+                        <p>من محمد کیوانی هستم دانشجوی رشته ی نرم افزار و در زمینه ی طراحی سایت فعالیت دارم</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left" style="padding:0">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body" style="padding-right:5px">
+                        <p>هدف از تاسیس این سایت تنها برای آموزش و فعالیت های تحقیقاتی است.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img class="img-respansive" src="img/prog.jpg" alt="...">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End About -->
+
+
+
+

@@ -1,16 +1,65 @@
 # Site settings
-title: Hossein Karami | حسین کرمی
-email: hi@hosseinkarami.com
-description: توسعه‌دهنده رابط کاربری
-baseurl: "https://hosseinkarami.com/"
-url: "https://hosseinkarami.com"
-twitter: _Karamii
-github:  HosseinKarami
-behance: HosseinKarami
+title: DentistSmile | Dental Jekyll Theme
+description: "A responsive Jekyll theme for dental clinics."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the name of your domain
+logo_url: svg/min/logo.svg
+
+# Hero
+hero: 
+    hero_img: hero.jpg
+    hero_title: DentistSmile
+    hero_description: A responsive Jekyll theme for dental clinics.
+
+# Contact form
+api_token: # Enter API token here
+
+# Contact info
+
+phone: 09357544751
+email: mohammadkeyvani74@gmail.com
+address: قاین خیابان ابوالمفاخر
+
+# Opening hours
+monday_friday: 9:00 – 18:00
+saturday: 10:00 – 17:00
+sunday: 10:00 – 15:00
+
+# Testimonials
+testimonials:
+    testimonials_img: parallax.jpg
+
+# Map
+map:
+    zoom: 17
+    address: Von schroeders 273, Viña del mar, Chile
+    address_details: svg/min/logo.svg
+
+    
+# Social settings
+facebook: http://facebook.com
+twitter: http://twitter.com
+instagram: http://instagram.com
+youtube: http://youtube.com
+skype: skype:obaez_design?userinfo
+feed: yes
+
+# Footer
+copyright: © 2015 DentistSmile - All rights reserved
+
 # Build settings
 markdown: kramdown
-permalink: pretty
-gems: [jekyll-paginate]
-paginate: 5
-paginate_path: "/blog/page:num/"
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+exclude: [
+    package.json,
+    Gruntfile.js,
+    node_modules,
+    .sass-cache,
+    Gemfile,
+    Gemfile.lock,
+    .gitignore
+]
+
+# Theme Settings
+analytics: 
+google_verification:

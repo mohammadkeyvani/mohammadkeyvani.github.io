@@ -1,49 +1,16 @@
-<header class="header">
-    <section class="about">
-      <a href="/">
-        <img src="{{site.url}}/assets/img/hk.png" alt="Hossein Karami">
-      </a>
-      <h1>حسین کرمی</h1>
-      <p>توسعه‌دهنده رابط کاربری</p>
-      <a href="#" class="nav-menu menu-open"><span class="menu-btn"></span></a>
-      <nav class="nav nav-list">
-        <ul>
-          <li>
-            <a href="{{site.url}}/works">
-              <div class="center waves-effect waves-side">
-                <h4 class="middle">نمونه کارها</h4>
-              </div>
-            </a>
-          </li>
-          <li>{% if site.github %}
-            <a href="https://github.com/{{ site.github }}" target="_blank">
-              <div class="center waves-effect waves-side">
-                <h4 class="middle">گیت‌هاب</h4>
-              </div>
-            </a>{% endif %}
-          </li>
-          <li>{% if site.twitter %}
-            <a href="https://twitter.com/{{ site.twitter }}" target="_blank">
-              <div class="center waves-effect waves-side">
-                <h4 class="middle">توییتر</h4>
-              </div>
-            </a>{% endif %}
-          </li>
-          <li>{% if site.behance %}
-            <a href="https://www.behance.net/{{ site.behance }}" target="_blank">
-              <div class="center waves-effect waves-side">
-                <h4 class="middle">بیهنس</h4>
-              </div>
-            </a>{% endif %}
-          </li>
-          <li>
-            <a href="{{site.url}}/feed.xml">
-              <div class="center waves-effect waves-side">
-                <h4 class="middle">RSS</h4>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </section>
-  </header>
+<!-- Start Header -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div style="border-bottom:1px solid #00acc1">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right col-xs-4">
+				<li class="col-xs-3 t-al m-no-padding"><a class="scroll " href="/example_work">نمونه کارها</a></li>
+                <li class="col-xs-3 t-al m-no-padding"><a class="scroll " href="#top">مطالب آموزشی</a></li>
+                <li class="col-xs-3 t-al m-no-padding"><a class="scroll " href="#about">درباره من</a></li>
+                <li class="col-xs-3 t-al m-no-padding"><a class="scroll " href="/index">خانه</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Header -->

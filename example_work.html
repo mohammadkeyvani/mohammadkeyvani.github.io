@@ -1,0 +1,88 @@
+---
+layout: default
+
+---
+
+<!-- Start Hero -->
+<div class="hero" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover;">
+    <div class="container-fluid">
+        <div class="col-sm-12" >
+		<br>
+          <h3 class="blue">نمونه کارها</h3>
+        </div>
+		<div class="col-xs-6 pull-right">
+			<div class="media" style="padding-top:10px">
+				<div class="col-xs-4 pull-right" >
+					<div class="codr">
+						<a href="http://bazinegar.ir/"><img class="img-respansive" src="img/m3.png" style="width:200px;height:200px;padding:13px;" ></a>
+					</div>
+				</div>
+
+			</div>
+			<br>
+		</div>
+
+    </div>
+</div>
+<!-- End Hero -->
+
+<!-- Start 3 columns -->
+<div class="three-shade-col">
+    <div class="col-sm-6">
+        <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
+        <h3>تماس با ما</h3>
+        <ul>
+            {% if site.phone %}<li><strong>تلفن تماس: </strong> {{ site.phone }}</li>{% endif %}
+            {% if site.email %}<li><strong>ایمیل: </strong> {{ site.email }}</li>{% endif %}
+        </ul>
+    </div>
+    <div class="col-sm-6">
+        <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
+        <h3>موقعیت</h3>
+            <p>
+                {{ site.address }}
+            </p>
+    </div>
+</div>
+<!-- End 3 columns -->
+
+<!-- Start About -->
+<div id="about" class="about">
+    <div class="container-fluid">
+        <h2 class="section-title">درباره من</h2>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>به سایت ما خوش آمدید</h3>
+                <div class="media">
+                    <div class="media-left" style="padding:0">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-heart"><use xlink:href="#icon-heart"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body" style="padding-right:5px">
+                        <p>من محمد کیوانی هستم دانشجوی رشته ی نرم افزار و در زمینه ی طراحی سایت فعالیت دارم</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left" style="padding:0">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body" style="padding-right:5px">
+                        <p>هدف از تاسیس این سایت تنها برای آموزش و فعالیت های تحقیقاتی است.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img class="img-respansive" src="img/prog.jpg" alt="...">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End About -->
+
+
+
+

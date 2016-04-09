@@ -1,0 +1,117 @@
+---
+layout: default
+
+---
+
+<!-- Start Hero -->
+<div class="hero" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover;">
+    <div class="container-fluid">
+		<div class="col-xs-12 pull-right">
+		<br>
+			<div class="col-xs-12" >
+				<img class="img-respansive" src="img/m5.png" style="margin:auto;width:100%">
+			</div>
+			<span><br></span>
+			<p>یکی از مشکلات یا ناسازگاری های jekyll با ویندوز عدم هماهنگی افزونه highlight اون هست که برای حل اون جایگزینی وجود داره</p>
+			<p>افزونه پیش فرض jekyll برای highlight کردن کدهای درون صفحات، افزونه pygments هست که توی ویندوز اجرا نمیشه و هر دفعه</p>
+			<p>که شما کد رو اجرا کنید پیام خطا میده. برای رفع مشکل highlight از افزونه rouge که با ویندوز سازگاری داره استفاده می کنیم. برای </p>
+			<p>نصب این افزونه کد زیر رو توی command prompt ویندوز وارد کنید.</p>
+			<div class="col-xs-12" >
+				<img class="img-respansive" src="img/m9.png" style="margin:auto">
+			</div>
+			<span><br><span>
+			<p>در نهایت هم برای اضافه کردن قابلیت watch (مشاهده تغییرات در آن واحد) به jekyll کد زیر رو وارد می کنیم تا افزونه مورد نظر نصب بشه.</p>
+			<div class="col-xs-12" >
+				<img class="img-respansive" src="img/m10.png" style="margin:auto">
+			</div>
+			<span><br><span>
+			<p>حالا برنامه ما به طور کامل نصب شده و ما می تونیم ازش استفاده کنیم. بطور مثال کدهای زیر یک وبسایت demo در شاخه D:\  نظر نصب بشه.</p>
+			<p>میسازه و بعد اون رو برای مشاهده روی آدرس http://localhost:4000 قابل دسترس می کنه.</p>
+			<div class="col-xs-12" >
+				<img class="img-respansive" src="img/m11.png" style="margin:auto">
+			</div>
+			<span><br><span>
+			<p>اگر در مرحله سوم با اجرای کد jekyll serve -w با مشکل برخوردید باید تنظیمات برنامه رو تغییر بدین. به مسیر D:\demo </p>
+			<p>رفته و فایل _config.yml رو با notepad باز کنید. در این فایل تنظیمات وبسایت demo ذخیره شده. به آخر فایل خط زیر رو اضافه </p>
+			<p>
+			کنید که نشون میده ما میخوایم از rouge استفاده کنیم.
+			</p>
+			<div class="col-xs-12" >
+				<img class="img-respansive" src="img/m12.png" style="margin:auto">
+			</div>
+			<span><br><span>
+			<div class="col-xs-6 pull-right m-no-padding">
+			<a class="a-link" href="/jekyll2_1"><h6 class="blue">صفحه ی بعد</h6></a>
+			</div>
+			<div class="col-xs-6 pull-right m-no-padding" style="text-align:left">
+			<a class="a-link" href="/jekyll_1"><h6 class="blue">صفحه ی قبل</h6></a>
+			</div>
+			<br>
+		</div>
+		<span><br></span>
+
+
+    </div>
+</div>
+<!-- End Hero -->
+
+<!-- Start 3 columns -->
+<div class="three-shade-col">
+    <div class="col-sm-6">
+        <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
+        <h3>تماس با ما</h3>
+        <ul>
+            {% if site.phone %}<li><strong>تلفن تماس: </strong> {{ site.phone }}</li>{% endif %}
+            {% if site.email %}<li><strong>ایمیل: </strong> {{ site.email }}</li>{% endif %}
+        </ul>
+    </div>
+    <div class="col-sm-6">
+        <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
+        <h3>موقعیت</h3>
+            <p>
+                {{ site.address }}
+            </p>
+    </div>
+</div>
+<!-- End 3 columns -->
+
+<!-- Start About -->
+<div id="about" class="about">
+    <div class="container-fluid">
+        <h2 class="section-title">درباره من</h2>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>به سایت ما خوش آمدید</h3>
+                <div class="media">
+                    <div class="media-left" style="padding:0">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-heart"><use xlink:href="#icon-heart"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body" style="padding-right:5px">
+                        <p>من محمد کیوانی هستم دانشجوی رشته ی نرم افزار و در زمینه ی طراحی سایت فعالیت دارم</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left" style="padding:0">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body" style="padding-right:5px">
+                        <p>هدف از تاسیس این سایت تنها برای آموزش و فعالیت های تحقیقاتی است.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img class="img-respansive" src="img/prog.jpg" alt="...">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End About -->
+
+
+
+

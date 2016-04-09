@@ -1,0 +1,114 @@
+---
+layout: default
+
+---
+
+<!-- Start Hero -->
+<div class="hero" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover;">
+    <div class="container-fluid">
+        <div class="col-sm-12" >
+		<br>
+          <h3 class="blue">آموزش جکیل قسمت 2</h3>
+        </div>
+		<div class="col-xs-12 pull-right">
+		<br>
+			<div class="col-xs-12" >
+				<img class="img-respansive" src="img/m13.png" style="margin:auto;width:100%">
+			</div>
+			<span><br></span>
+			<p>در قسمت دوم آموزش نصب jekyll، نحوه اتصال این برنامه به یک صفحه github و طریقه پیکربندی اون رو توضیح خواهم داد. در </p>
+			<p>اینجا نکته ای که بسیار اهمیت داره نحوه پیکربندی برنامه تو ویندوز هست. چون اجرای jekyll روی ویندوز با تنظیمات پیش فرض </p>
+			<p>github به دلیل ناسازگاری افزونه هایی مثل pygments پیغام خطا میده.</p>
+			<span><br><span>
+			<h4 class="blue">ایجاد حساب github</h4>
+			<p>بعد از ثبت نام در وبسایت github، در منو بالا New Repository رو انتخاب کرده و یک مخزن ایجاد کنید. در قسمت نام مخزن، عبارت </p>
+			<p>username.github.io رو وارد کنید (بجای username نام کاربری خودتون رو بنویسید). ما بقی تنظیمات را در حالت پیش فرض </p>
+			<p>قرار دهید.</p>
+			<p>سپس با استفاده از نرم افزار github در ویندوز از مخزن خود clone بگیرید و اونو تو یک فولدر بریزید</p>
+			<p>خب حالا نوبت به jekyll میرسه. در اینجا باید یک وبسایت جدید با jekyll تو همون مسیر ایجاد کنید. به طور مثال اگه مسیر مخزن </p>
+			<p>شما C:\username.github.io باشه کد زیر رو وارد می کنید.</p>
+			<div class="col-xs-12" >
+				<img class="img-respansive" src="img/m14.png" style="margin:auto">
+			</div>
+			<span><br><span>
+			<p>تنظیمات مربوط به وبسایتتون که شامل نام و توضیحات و … میشه رو تو فایل _config.yml وارد کنید. بعد از تغییر دادن </p>
+			<p>محتویات این فایل اون رو تو همین مسیر با نام جدید مثلا win_config.yml کپی کنید. تو فایل جدید کد زیر رو به انتهای فایل </p>
+			<p>اضافه کنید.</p>
+						<div class="col-xs-12" >
+				<img class="img-respansive" src="img/m15.png" style="margin:auto">
+			</div>
+			<span><br><span>
+			<p>دلیل ایجاد این فایل و اضافه کردن این خط اینه که می خوایم برنامه تو ویندوز با فایل تنظیمات دوم اجرا بشه تا مشکلی برای اون </p>
+			<p>پیش نیاد ولی موقع آپلود و قرار گرفتن روی سرور فایل اصلی اجرا بشه.</p>
+					<div class="col-xs-6 pull-right m-no-padding">
+			<a class="a-link" href="/jekyll_1"><h6 class="blue">آموزش جکیل قسمت1</h6></a>
+			</div>
+			<br>
+		</div>
+		<span><br></span>
+
+
+    </div>
+</div>
+<!-- End Hero -->
+
+<!-- Start 3 columns -->
+<div class="three-shade-col">
+    <div class="col-sm-6">
+        <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
+        <h3>تماس با ما</h3>
+        <ul>
+            {% if site.phone %}<li><strong>تلفن تماس: </strong> {{ site.phone }}</li>{% endif %}
+            {% if site.email %}<li><strong>ایمیل: </strong> {{ site.email }}</li>{% endif %}
+        </ul>
+    </div>
+    <div class="col-sm-6">
+        <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
+        <h3>موقعیت</h3>
+            <p>
+                {{ site.address }}
+            </p>
+    </div>
+</div>
+<!-- End 3 columns -->
+
+<!-- Start About -->
+<div id="about" class="about">
+    <div class="container-fluid">
+        <h2 class="section-title">درباره من</h2>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>به سایت ما خوش آمدید</h3>
+                <div class="media">
+                    <div class="media-left" style="padding:0">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-heart"><use xlink:href="#icon-heart"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body" style="padding-right:5px">
+                        <p>من محمد کیوانی هستم دانشجوی رشته ی نرم افزار و در زمینه ی طراحی سایت فعالیت دارم</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left" style="padding:0">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body" style="padding-right:5px">
+                        <p>هدف از تاسیس این سایت تنها برای آموزش و فعالیت های تحقیقاتی است.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img class="img-respansive" src="img/prog.jpg" alt="...">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End About -->
+
+
+
+
